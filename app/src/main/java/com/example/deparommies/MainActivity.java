@@ -14,6 +14,8 @@ public class MainActivity extends AppCompatActivity {
     EditText usuario, contrasena;
     Button ingresar;
 
+    Usuario user = new Usuario("Juan", "Hurtado", "Juan es un joven que busca departamento en Lima.", "Juan23", "12345", 25, R.drawable.juanfoto);
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void ingresar(View view){
-        if(usuario.getText().toString().equals("isil") && contrasena.getText().toString().equals("12345")){
+        if(usuario.getText().toString().equals(user.getUsuario()) && contrasena.getText().toString().equals(user.getContrasena())){
             Toast.makeText(MainActivity.this, "Datos Correctos", Toast.LENGTH_SHORT).show();
             Intent intent=new Intent(this, UserPage.class);
             intent.putExtra("Nombre de Usuario", usuario.getText().toString());
