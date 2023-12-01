@@ -43,5 +43,6 @@ public class UserPage extends AppCompatActivity {
 
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
+        Toast.makeText(UserPage.this, "Has Cerrado Sesión", Toast.LENGTH_SHORT).show();
     }
 }
