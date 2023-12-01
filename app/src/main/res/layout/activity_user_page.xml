@@ -7,13 +7,25 @@
     tools:context=".UserPage">
 
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvUsuarios"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         android:id="@+id/btnSalir"
         style="@style/Widget.Material3.Button.Icon"
         android:layout_width="170dp"
         android:layout_height="50dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="20dp"
         android:onClick="salir"
         android:text="Salir"
         android:textColor="#000000"
@@ -21,70 +33,21 @@
         app:icon="@drawable/baseline_arrow_back_ios_24"
         app:iconTint="#000000"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txvDescripcion"
+        app:layout_constraintTop_toBottomOf="@+id/rvUsuarios"
         app:rippleColor="#000000" />
 
-    <TextView
-        android:id="@+id/txvNombre"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="37dp"
-        android:text="Nombre Usuario"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/txvEdad"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="16dp"
-        android:text="Edad Usuario"
-        android:textSize="18dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txvNombre" />
-
-    <ImageButton
-        android:id="@+id/imgUsuario"
-        android:layout_width="364dp"
-        android:layout_height="308dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="22dp"
-        android:layout_marginBottom="30dp"
-        android:contentDescription="@string/app_name"
-        android:scaleType="center"
-        app:layout_constraintBottom_toTopOf="@+id/txvDescripcion"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txvEdad"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <TextView
-        android:id="@+id/txvDescripcion"
-        android:layout_width="357dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="30dp"
-        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,  when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgUsuario" />
-
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnBuscar"
         style="@style/Widget.Material3.Button.Icon"
         android:layout_width="170dp"
         android:layout_height="50dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="24dp"
         android:text="Buscar"
         app:backgroundTint="#FF3131"
         app:icon="@drawable/baseline_arrow_forward_ios_24"
         app:iconGravity="end"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txvDescripcion" />
+        app:layout_constraintTop_toBottomOf="@+id/rvUsuarios" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

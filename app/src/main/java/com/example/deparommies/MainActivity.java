@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void ingresar(View view){
-        if(usuario.getText().toString().equals(user.getUsuario()) && contrasena.getText().toString().equals(user.getContrasena())){
+        if(usuario.getText().toString().equals(user.getUsuario()) && contrasena.getText().toString().equals(user.getContrasena())) {
             Toast.makeText(MainActivity.this, "Datos Correctos", Toast.LENGTH_SHORT).show();
             Intent intent=new Intent(this, UserPage.class);
             intent.putExtra("Nombre de Usuario", usuario.getText().toString());
