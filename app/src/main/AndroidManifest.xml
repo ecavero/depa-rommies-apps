@@ -13,6 +13,12 @@
         android:theme="@style/Theme.DepaRommies"
         tools:targetApi="31">
         <activity
+            android:name=".UserPage"
+            android:exported="false" />
+        <activity
+            android:name=".Usuario2"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
