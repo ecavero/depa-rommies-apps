@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     Usuario user = new Usuario("Juan", "Hurtado", "Juan es un joven que busca departamento en Lima.", "Juan23", "12345", 25, R.drawable.juanfoto);
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,8 +31,14 @@ public class MainActivity extends AppCompatActivity {
         if(usuario.getText().toString().equals(user.getUsuario()) && contrasena.getText().toString().equals(user.getContrasena())) {
             Toast.makeText(MainActivity.this, "Datos Correctos", Toast.LENGTH_SHORT).show();
             Intent intent=new Intent(this, UserPage.class);
-            intent.putExtra("Nombre de Usuario", usuario.getText().toString());
+            intent.putExtra("Usuario", usuario.getText().toString());
             intent.putExtra("Clave de Acceso", contrasena.getText().toString());
+            intent.putExtra("Nombre de Usuario", user.getNombre());
+            intent.putExtra("Apellido de Usuario", user.getApellido());
+            intent.putExtra("Descripcion de Usuario", user.getDescripcion());
+            intent.putExtra("Edad de Usuario", user.getEdad());
+            intent.putExtra("Foto de Usuario", user.getFoto());
+
             startActivity(intent);
         }
         else{

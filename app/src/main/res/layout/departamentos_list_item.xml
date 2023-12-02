@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txtNombre"
+        android:layout_width="174dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:text="Título Departamento"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgFotoPrincipal"
+        android:layout_width="103dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@+id/txtNombre"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <TextView
+        android:id="@+id/txtDescripcion"
+        android:layout_width="240dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombre" />
+
+    <Button
+        android:id="@+id/btnVerDepartamento"
+        style="@style/Widget.Material3.Button.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Ver Departamento"
+        app:backgroundTint="#FF3131"
+        app:icon="@drawable/baseline_arrow_forward_ios_24"
+        app:iconGravity="end"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescripcion" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
