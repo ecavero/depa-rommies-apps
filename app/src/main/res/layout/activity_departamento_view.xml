@@ -20,14 +20,26 @@
     <Button
         android:id="@+id/btnRegresar"
         style="@style/Widget.Material3.Button.Icon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="20dp"
         android:backgroundTint="#FF3131"
         android:onClick="regresar"
         android:text="Regresar"
         app:icon="@drawable/baseline_arrow_back_ios_24"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rvDepartamentoView" />
+
+    <Button
+        android:id="@+id/btnContactar"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="#BABABA"
+        android:text="Contactar"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rvDepartamentoView" />
 </androidx.constraintlayout.widget.ConstraintLayout>
