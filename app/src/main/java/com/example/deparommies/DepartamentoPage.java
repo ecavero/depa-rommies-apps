@@ -38,6 +38,12 @@ public class DepartamentoPage extends AppCompatActivity {
 "- Habitación secundaria 2 o estudio, sin closet \n" +
 "- Sala comedor con balcón y mampara, vista externa \n" +
 "-Cocina abierta con tablero, muebles altos y bajos (cocina vitroceramica - electrica)", R.drawable.depa_2));
+        departamentos.add(new Departamento("ALQUILER de DEPARTAMENTO en ESTRENO AMOBLADO SAN ISIDRO", "Departamento ubicado en exclusivo edificio en la Cdra. 32 de la Av. Arequipa; completamente a estrenar, cuenta con 1 habitación, sala comedor, cocina abierta, 1 baño y conexión para lavadora.\n" +
+"Características:\n" +
+"- Habitación amplia con walk in closet, cuenta con cama de 2 plazas y veladores\n" +
+"- Sala comedor con balcón y mampara; vista exterior interna, sofás,\n" +
+"alfombra y TV Smart 58”\n" +
+"- Cocina abierta con tablero de granito, muebles altos y bajos; cuenta con cocina encimera vitroceramica, horno y campana empotrados, refrigerador, horno microondas ", R.drawable.depa_3));
 
         for(int i = 0; i < departamentos.size(); i++) {
             Departamento d = departamentos.get(i);
