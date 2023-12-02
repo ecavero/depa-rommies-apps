@@ -43,6 +43,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="24dp"
+        android:onClick="buscar"
         android:text="Buscar"
         app:backgroundTint="#FF3131"
         app:icon="@drawable/baseline_arrow_forward_ios_24"
